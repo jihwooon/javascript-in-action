@@ -12,16 +12,14 @@ export const metadata: Metadata = {
 
 interface Props {
   children: React.ReactNode;
-  modal: React.ReactNode;
 }
 
-export default function RootLayout({ children, modal }: Props) {
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className={inter.className}>
         <div className={styles.container}>
           {children}
-          {modal}
         </div>
       </body>
     </html>

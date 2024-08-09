@@ -1,11 +1,9 @@
 .container {
    display: flex;
    align-items: stretch;
-   /*background-color: #ffffff;*/
 }
 
 .leftSectionWrapper {
-   background-color: #7925d3;
    display: flex;
    align-items: flex-end;
    flex-direction: column;
@@ -13,14 +11,12 @@
 }
 
 .leftSection {
-   background-color: #7925d3;
    width: 275px;
    height: 100dvh;
 }
 
 .leftSectionFixed {
    position: fixed;
-   background-color: orange;
    width: inherit;
    height: 97dvh;
    display: flex;
@@ -95,7 +91,6 @@
 }
 
 .rightSection {
-   background-color: blue;
    width: 350px;
    height: 100%;
 }

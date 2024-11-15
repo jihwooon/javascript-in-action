@@ -8,10 +8,11 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement>{
     scheme: ButtonScheme;
     disabled?: boolean;
     isLoading?: boolean;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-function Button({children, size, scheme, disabled, isLoading}: Props) {
-    return <ButtonStyle size={size} scheme={scheme} disabled={disabled} isLoading={isLoading}>{children}</ButtonStyle>
+function Button({children, size, scheme, disabled, isLoading, onClick}: Props) {
+    return <ButtonStyle size={size} scheme={scheme} disabled={disabled} isLoading={isLoading} onClick={onClick}>{children}</ButtonStyle>
 }
 
 const ButtonStyle = styled.button<Omit<Props, "children">>`

@@ -1,0 +1,17 @@
+html body {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    background: #949087;
+    font-size: 0.874rem;
+}
